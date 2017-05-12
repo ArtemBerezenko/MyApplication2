@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/double_margin"
+        android:textSize="@dimen/large_text"
+        android:text="@string/title_text"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_margin"
+        android:textSize="@dimen/medium_text"
+        android:hint="@string/base_hint"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:maxLines="3"/>
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_margin"
+            android:textSize="@dimen/medium_text"
+            android:text="@string/enter_text"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_weight="0.28" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_margin"
+            android:textSize="@dimen/medium_text"
+            android:text="@string/reset_text"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_weight="0.21" />
+
+        <Button
+            android:id="@+id/hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_margin"
+            android:textSize="@dimen/medium_text"
+            android:text="@string/hide_text"
+            android:layout_weight="0.34" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/double_margin"
+        android:textSize="@dimen/large_text"
+        android:text="@string/text"/>
+
+</LinearLayout>
